@@ -1,0 +1,13 @@
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 172.0.20.20/24
+    gateway 172.0.20.100
+
+iface eth0 inet6 static
+    address 2001:db8:574:B::20
+    netmask 64
+    gateway 2001:db8:574:B::100

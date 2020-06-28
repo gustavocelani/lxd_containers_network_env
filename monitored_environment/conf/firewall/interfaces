@@ -1,0 +1,30 @@
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+    address 172.0.10.100/24
+
+iface eth1 inet6 static
+    address 2001:db8:574:A::100
+    netmask 64
+
+auto eth2
+iface eth2 inet static
+    address 172.0.20.100/24
+
+iface eth2 inet6 static
+    address 2001:db8:574:B::100
+    netmask 64
+
+auto eth3
+iface eth3 inet static
+    address 172.0.30.100/24
+
+iface eth3 inet6 static
+    address 2001:db8:574:C::100
+    netmask 64
